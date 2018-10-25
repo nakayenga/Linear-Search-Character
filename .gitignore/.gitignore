@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+  char a[5] = "cathy";
+  char key;
+  int i;
+  /*tell the user to input the key they are searching for*/
+  printf("Enter the character you want to search for:\n");
+  scanf("%c",&key);
+  
+  for(i=0; i<5; i++){
+    if(a[i]==key)
+    {
+      printf("%c has been found!\n",key);
+      break;
+    }
+    else
+    {
+      printf("Not Found!\n");
+      break;
+    }
+  }
+}
+
